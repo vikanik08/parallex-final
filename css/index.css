@@ -231,7 +231,7 @@ footer {
 
 .logo {
   margin: 4vw 0 0 3vw;
-  background-image: url(./img/logo.svg);
+  background-image: url("./img/logo.svg)";
   background-repeat: no-repeat;
 }
 
@@ -254,6 +254,6 @@ footer {
 .qr {
   width: 10vw;
   height: 10vw;
-  background-image: url(./img/qr.svg);
+  background-image: url("./img/qr.svg");
   background-repeat: no-repeat;
 }
