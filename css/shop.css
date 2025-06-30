@@ -68,7 +68,7 @@ body {
 .cart {
   width: 5vw;
   height: 5vw;
-  background-image: url("./img/cart.svg");
+  background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
   cursor: url("../img/cursor-pointer.svg"), auto;
 }
