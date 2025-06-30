@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url("./img/cursors.svg"), auto;
+  cursor: url("../img/cursors.svg"), auto;
 }
 
 html, body {
@@ -70,7 +70,7 @@ body {
   height: 5vw;
   background-image: url("./img/cart.svg");
   background-repeat: no-repeat;
-  cursor: url("/img/cursor-pointer.svg"), auto;
+  cursor: url("../img/cursor-pointer.svg"), auto;
 }
 
 .product-img {
@@ -82,17 +82,17 @@ body {
 }
 
 .sveter {
-  background-image: url("./img/sveter.svg");
+  background-image: url("../img/sveter.svg");
   background-repeat: no-repeat;
 }
 
 .album {
-  background-image: url("./img/notebook.svg");
+  background-image: url("../img/notebook.svg");
   background-repeat: no-repeat;
 }
 
 .sveterback {
-  background-image: url("./img/sveter-back.svg");
+  background-image: url("../img/sveter-back.svg");
   background-repeat: no-repeat;
 }
 
@@ -103,7 +103,7 @@ body {
 .like-btn {
   width: 5vw;
   height: 5vw;
-  background-image: url("./img/like-btn.svg");
+  background-image: url("../img/like-btn.svg");
   cursor: url("/img/cursor-pointer.svg"), auto;
   background-repeat: no-repeat;
 }
@@ -179,7 +179,7 @@ body {
   padding: 0.83vw 0;
   background: #B6C7E1;
   color: #ffffff;
-  cursor: url("./img/cursor-pointer.svg"), auto;
+  cursor: url("../img/cursor-pointer.svg"), auto;
   transform: translateY(100%);
   opacity: 0;
   transition: transform var(--transition-med), opacity var(--transition-med);
