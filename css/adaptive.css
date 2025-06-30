@@ -1,0 +1,219 @@
+@media screen and (max-width: 415px) {
+
+.cell {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+}
+
+.cell canvas {
+    padding: 1vw;
+    position: absolute;
+    inset: 0;
+    width: 45vw;
+    height: 45vw;
+}
+
+.burger {
+    padding: 0 0 2vw 0;
+    margin: 0 0 1vw -7vw;
+    width: 100vw;
+    height: 10vw;
+    background-color: rgba(158, 184, 222, 0.53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url(/img/cursor-pointer.svg), auto;
+    border: none;
+    font-size: 6vw;
+    color: #fff;
+    font-family: 'Fugue', sans-serif;
+}
+
+.code {
+    font-family: 'Fugue';
+    position: absolute;
+    top: 0.5vw;
+    left: 1vw;
+    font-size: 3.8vw;
+    color: #000000;
+    user-select: none;
+}
+
+.menu-list li, .submenu li {
+    margin: 1rem 0;
+    width: 90vw;
+    height: 9vw;
+    background-color: rgba(158, 184, 222, 0.53);
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list a, .submenu li {
+    font-size: 3vw;
+    letter-spacing: 0.8px;
+    color: #fff;
+    font-family: 'Fugue';
+    text-decoration: none;
+    transition: opacity 0.2s;
+    cursor: url(/img/cursor-pointer.svg), auto;
+}
+
+.title-text {
+    position: absolute;
+    left: 5vw;
+    top: 30vw;
+    width: 70vw;
+    height: 5vw;
+    font-size: 5.2vw;
+    color: #fff;
+    font-family: 'Fugue', sans-serif;
+}
+
+footer {
+    display: none;
+}
+
+.product-card {
+    margin: 10vw 0 0 5vw;
+    position: relative;
+    width: 90vw;
+    height: 90vw;
+    background: #ffffff;
+    box-shadow: 0 0.42vw 0.83vw rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform var(--transition-fast);
+}
+
+.container-shop {
+    gap: 10vw;
+    flex-direction: column;
+    width: 100vw;
+    height: 375vw;
+    display: flex
+;
+    flex-wrap: wrap;
+    margin: 12vw 0;
+}
+
+.album, .sveter, .sveterback {
+    background-size: contain;
+}
+
+.product-img {
+    height: 70%;
+    margin: 5vw 0 0 13vw;
+}
+
+.order-btn h3 {
+    font-size: 4.6vw;
+    font-family: 'Fugue';
+}
+
+.price {
+    font-size: 4.2vw;
+    color: #526174;
+    margin: 0;
+    font-family: 'Fugue';
+}
+
+.title-shop {
+    font-size: 5vw;
+    margin: 0 0 0.42vw;
+    font-family: 'Fugue';
+}
+
+.title-shop span {
+    font-size: 2vw;
+}
+
+.size-tag {
+    font-size: 2.2vw;
+}
+
+.cart, .like-btn {
+    background-size: contain;
+    width: 8vw;
+    height: 6vw;
+}
+
+.like-cart-container {
+    width: 17vw;
+    height: 9vw;
+    display: flex;
+}
+
+.bg-blur {
+    top: 3vw;
+    margin-top: 0vw;
+    width: 92vw;
+    height: 170vw;
+    background: rgba(217, 217, 217, 0.60);
+    backdrop-filter: blur(16.25px);
+    position: absolute;
+    z-index: -1;
+}
+
+.error-text {
+    flex-direction: column;
+    left: 33vw;
+    top: 13vw;
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    height: 96vw;
+}
+
+.four-one, .four-two {
+    font-family: 'Inter';
+    font-size: 50vw;
+}
+
+.one-centre {
+    font-family: 'Inter-Italic';
+    font-size: 50vw;
+}
+
+.bottom-right {
+    margin-top: 120vw;
+    display: flex
+;
+    width: 26vw;
+    height: 9vw;
+    justify-content: center;
+    align-items: center;
+    border: 0.883px solid #000;
+}
+
+.top-right h3 {
+    font-size: 2.2vw;
+}
+
+.bottom-right {
+    margin-top: 120vw;
+}
+
+.bottom-right h4 {
+    font-size: 2vw;
+}
+
+.four-two {
+    top: 94vw;
+    position: absolute;
+    rotate: 180deg;
+}
+
+.top-right {
+    display: flex;
+    width: 26vw;
+    height: 8vw;
+}
+
+.top-line, .bottom-line {
+    margin: 1vw 0 0 0;
+}
+
+
+}

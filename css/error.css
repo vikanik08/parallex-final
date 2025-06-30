@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("/img/cursors.svg"), auto;
+}
+
+html, body {
+  height: auto;
+  font-family: 'Fugue', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video Background */
+.video-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.video-bg video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.video-bg::before,
+.video-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  pointer-events: none;
+  backdrop-filter: blur(25px);
+}
+
+.video-bg::before { left: 0; }
+.video-bg::after { right: 0; }
+
+.bg-blur {
+    margin-top: -7vw;
+    width: 92vw;
+    height: 50vw;
+    background: rgba(217, 217, 217, 0.60);
+    backdrop-filter: blur(16.25px);
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-no-blur {
+    margin-top: 5vw;
+    width: 92vw;
+    height: 62vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-line, .bottom-line {
+    width: 92vw;
+    height: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-line {
+    justify-content: end;
+}
+
+.top-left {
+    display: flex;
+    width: 30vw;
+    height: 10vw;
+    justify-content: center;
+    align-items: center;
+    border: 0.883px solid #000;
+}
+
+.top-left h1, .top-right h3, .bottom-right h4{
+    color: #000;
+    font-family: 'Fugue';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.top-left h1 {
+    font-size: 2.6vw;
+}
+
+.top-right h3 {
+    font-size: 1.2vw;
+}
+
+.bottom-right h4 {
+    font-size: 1vw;
+}
+
+.top-right {
+    display: flex;
+    width: 20vw;
+    height: 8vw;
+    justify-content: center;
+    align-items: center;
+    border: 0.883px solid #000;
+}
+
+.bottom-right {
+    margin-top: 2vw;
+    display: flex;
+    width: 16vw;
+    height: 6vw;
+    justify-content: center;
+    align-items: center;
+    border: 0.883px solid #000;
+}
+
+.error-text {
+    left: 23vw;
+    top: 13vw;
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    height: 30vw;
+}
+
+.four-one, .four-two {
+    font-family: 'Inter';
+    font-size: 30vw;
+}
+
+.four-two {
+    rotate: 180deg;
+}
+
+.one-centre {
+    font-family: 'Inter-Italic';
+    font-size: 30vw; 
+}

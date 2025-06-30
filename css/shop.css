@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("/img/cursors.svg"), auto;
+}
+
+html, body {
+  height: auto;
+  font-family: 'Fugue', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 65vw;
+}
+
+.container-shop {
+  width: 100vw;
+  height: 45vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12vw 0;
+}
+
+:root {
+  --heart-size: 1.46vw;
+  --transition-fast: 0.3s ease;
+  --transition-med: 0.5s ease;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52.08vw;
+  background: #e4ecf9;
+  font-family: "Inter", sans-serif;
+}
+
+.product-card {
+  position: relative;
+  width: 33vw;
+  background: #ffffff;
+  box-shadow: 0 0.42vw 0.83vw rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform var(--transition-fast);
+}
+
+.shop-top-line {
+  width: 100%;
+  height: 2vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+
+.like-cart-container {
+  width: 7vw;
+  height: 2vw;
+  display: flex;
+}
+
+.product-card:hover {
+  transform: translateY(-0.21vw);
+}
+
+.cart {
+  width: 5vw;
+  height: 5vw;
+  background-image: url(/img/cart.svg);
+  background-repeat: no-repeat;
+  cursor: url("/img/cursor-pointer.svg"), auto;
+}
+
+.product-img {
+  margin: 5vw 0 0 2vw;
+  width: 100%;
+  height: 28.67vw;
+  object-fit: cover;
+  transition: filter var(--transition-med);
+}
+
+.sveter {
+  background-image: url(/img/sveter.svg);
+  background-repeat: no-repeat;
+}
+
+.album {
+  background-image: url(/img/notebook.svg);
+  background-repeat: no-repeat;
+}
+
+.sveterback {
+  background-image: url(/img/sveter-back.svg);
+  background-repeat: no-repeat;
+}
+
+.product-card:hover .product-img {
+  filter: blur(2px);
+}
+
+.like-btn {
+  width: 5vw;
+  height: 5vw;
+  background-image: url(/img/like-btn.svg);
+  cursor: url("/img/cursor-pointer.svg"), auto;
+  background-repeat: no-repeat;
+}
+
+.like-btn svg {
+  width: 100%;
+  height: 100%;
+  stroke: #1e1e1e;
+  stroke-width: 2;
+  fill: transparent;
+  transition: fill var(--transition-fast), stroke var(--transition-fast);
+}
+
+.like-btn.active svg {
+  fill: #f44336;
+  stroke: #f44336;
+}
+
+.size-tag {
+  margin-left: 1vw;
+  width: 5vw;
+  color: #000;
+  padding: 0.21vw 0.52vw;
+  font-size: 1.2vw;
+  opacity: 0;
+  transform: translateY(-0.52vw);
+  transition: opacity var(--transition-med), transform var(--transition-med);
+  z-index: 3;
+  font-family: 'Fugue';
+}
+
+.product-card:hover .size-tag {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info {
+  padding: 1.04vw 1.25vw 3.75vw;
+}
+
+.product-card:hover .info,
+.product-card:hover .product-img {
+  transform: translateY(-2vw);
+  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.title-shop {
+  font-size: 2vw;
+  margin: 0 0 0.42vw;
+  font-family: 'Fugue';
+}
+
+.title-shop span {
+  font-size: 1vw;
+}
+
+.price {
+  font-size: 1.2vw;
+  color: #526174;
+  margin: 0;
+  font-family: 'Fugue';
+}
+
+.order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  padding: 0.83vw 0;
+  background: #B6C7E1;
+  color: #ffffff;
+  cursor: url("/img/cursor-pointer.svg"), auto;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform var(--transition-med), opacity var(--transition-med);
+  z-index: 2;
+}
+
+.order-btn h3 {
+  font-size: 1.6vw;
+  font-family: 'Fugue';
+}
+
+.product-card:hover .order-btn {
+  transform: translateY(0);
+  opacity: 1;
+}

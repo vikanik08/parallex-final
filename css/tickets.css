@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("/img/cursors.svg"), auto;
+}
+
+html, body {
+  height: auto;
+  font-family: 'Fugue', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 65vw;
+}
+
+.bg-color {
+  width: 100vw;
+  height: 65vw;
+  position: absolute;
+  z-index: -1;
+  filter: blur(75px);
+  background: #B6C7E1;
+}
+
+:root {
+  --light: #B6C7E1;
+  --dark: #3A506B;
+}
+
+#grid {
+  margin: 5vw 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5vw 2vw;
+  width: 100vw;
+}
+
+.cell {
+  position: relative;
+  width: 12vw;
+  height: 12vw;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+  overflow: hidden;
+}
+
+.cell canvas {
+  padding: 1vw;
+  position: absolute;
+  inset: 0;
+  width: 15vw;
+  height: 15vw;
+}
+
+.code {
+  font-family: 'Fugue';
+  position: absolute;
+  top: 0.5vw;
+  left: 1vw;
+  font-size: 0.8vw;
+  color: #000000;
+  user-select: none;
+}

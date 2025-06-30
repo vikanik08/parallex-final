@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Fugue";
+    src: url("../font/cf3b1825f5b015ebd8dcdc3e97ac129c.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+ @font-face {
+    font-family: "Inter";
+    src: url("../font/Inter_24pt-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Inter-Italic";
+    src: url("../font/Inter_18pt-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+  }
+  
